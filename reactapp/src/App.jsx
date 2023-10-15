@@ -44,9 +44,6 @@ export default class App extends Component {
     }
 
     async populateTripData() {
-        //const response = await fetch('weatherforecast');
-        //const data = await response.json();
-        //this.setState({ forecasts: data, loading: false });
         const response = await fetch('ping');
         await response.json();
         this.setState({ loading: false });

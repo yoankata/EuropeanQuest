@@ -10,7 +10,6 @@ namespace webapi.Repository
         // Open database (create new if file doesn't exist)
         private static DataStore store = new DataStore(filePath);
 
-        // Get employee collection LINQ to query items
         private static readonly IDocumentCollection<Trip> tripCollection = store.GetCollection<Trip>();
 
         public static IDocumentCollection<Trip> GetTripCollection()

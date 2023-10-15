@@ -8,12 +8,10 @@ namespace webapi.Controllers;
 public class PingController : ControllerBase
 {
     private readonly ILogger<TripController> logger;
-    private readonly ITripRepository repo;
 
     public PingController(ILogger<TripController> logger, ITripRepository repo)
     {
         this.logger = logger;
-        this.repo = repo;
     }
 
     [HttpGet(Name = "Ping")]

@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using webapi.Models;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace webapi.Repository;
 
